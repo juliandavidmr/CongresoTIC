@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Storage } from '@ionic/storage';
 import 'rxjs/add/operator/map';
 
 /*
@@ -11,8 +11,29 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DataStorage {
 
-  constructor(public http: Http) {
+  constructor(public storage: Storage) {
     console.log('Hello DataStorage Provider');
+
+    this.getList().then(values => {
+      if (!values) {
+        this.storage.set('list', []);
+      }
+    })
+  }
+
+  add(identificacion: string) {
+    this.getList().then((values: any = []) => {
+      values.push({
+        num: identificacion,
+        date: new Date()
+      });
+
+      this.storage.set('list', values);    
+    });
+  }
+
+  getList() {
+    return this.storage.get('list');
   }
 
 }

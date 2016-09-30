@@ -2,36 +2,43 @@ import { Component } from '@angular/core';
 
 import { NavController, AlertController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
+import * as moment from 'moment';
 
 import { BarcodeScanner } from 'ionic-native';
+
+import { DataStorage } from '../../providers/data-storage';
 
 @Component({
   selector: 'page-page1',
   templateUrl: 'page1.html',
   providers: [
-    [Storage]
+    [DataStorage]
   ]
 })
 export class Page1 {
 
   count: number = 0;
+  list: any = [];
 
   constructor(
     public navCtrl: NavController,
     public alertCtrl: AlertController,
-    public storage: Storage
+    public storage: Storage,
+    public listStorage: DataStorage
   ) {
 
   }
 
   ionViewDidLoad() {
-    this.storage.get('count').then((value: number) => {
-      if (value || value === 0) {
-        console.log("Count: ", value);
+    // console.log("Moment: ", moment);
+    this.loadList();
+  }
 
-        this.count = value;
-      } else {
-        this.storage.set('count', 0);
+  loadList() {
+    this.listStorage.getList().then((list: any = []) => {
+      if (list) {
+        this.list = list;
+        this.count = list.length;
       }
     });
   }
@@ -46,7 +53,13 @@ export class Page1 {
   }
 
   readBarcode() {
+    console.log("Leyendo codigo");
+
     BarcodeScanner.scan().then((barcodedata) => {
+      this.listStorage.add(barcodedata);
+
+      this.loadList();
+
       this.showAlert(
         'Codigo leido correctamente',
         JSON.stringify(barcodedata)
