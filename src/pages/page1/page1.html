@@ -1,9 +1,11 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Captura ({{count}})</ion-title>
+    <ion-title *ngIf="list.length === 0">Sin registros</ion-title>
+    <ion-title *ngIf="list.length === 1">1 Capturado</ion-title>
+    <ion-title *ngIf="list.length > 1">{{list.length}} Capturados</ion-title>    
   </ion-navbar>
 </ion-header>
 
@@ -17,14 +19,15 @@
     <ion-item *ngFor="let item of list" >
       <h2>{{item.num}}</h2>
       <p>{{item.date}}</p>
-      <ion-note item-right>{{moment(item.date).fromNow()}}</ion-note>
+      <!-- <ion-note item-right>{{item.date}}</ion-note> -->
+      <!-- <ion-note item-right>{{moment(item.date).fromNow()}}</ion-note> -->
     </ion-item>
 
     <ion-item>
       <h2>Rex</h2>
       <p>Were you scared? Tell me honestly.</p>
       <ion-note item-right>7:22 am</ion-note>
-    </ion-item>    
+    </ion-item>
 
   </ion-list>
 

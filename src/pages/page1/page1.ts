@@ -10,14 +10,10 @@ import { DataStorage } from '../../providers/data-storage';
 
 @Component({
   selector: 'page-page1',
-  templateUrl: 'page1.html',
-  providers: [
-    [DataStorage]
-  ]
+  templateUrl: 'page1.html'
 })
 export class Page1 {
 
-  count: number = 0;
   list: any = [];
 
   constructor(
@@ -30,7 +26,8 @@ export class Page1 {
   }
 
   ionViewDidLoad() {
-    // console.log("Moment: ", moment);
+    // console.log("Moment: ", moment(new Date()));
+
     this.loadList();
   }
 
@@ -38,7 +35,14 @@ export class Page1 {
     this.listStorage.getList().then((list: any = []) => {
       if (list) {
         this.list = list;
-        this.count = list.length;
+      }
+
+      var a = 10;
+      while (a-- > 0) {
+        this.list.push({
+          num: Math.random() * 1000000000,
+          date: new Date()
+        });
       }
     });
   }
@@ -56,14 +60,20 @@ export class Page1 {
     console.log("Leyendo codigo");
 
     BarcodeScanner.scan().then((barcodedata) => {
-      this.listStorage.add(barcodedata);
+      if (barcodedata.cancelled) {
+        this.showAlert(
+          'Cancelado',
+          'Se ha cancelado la lectura de codigos de barras o Qr.'
+        );
+      } else {
+        this.listStorage.add(barcodedata);
+        this.loadList();
 
-      this.loadList();
-
-      this.showAlert(
-        'Codigo leido correctamente',
-        JSON.stringify(barcodedata)
-      );
+        this.showAlert(
+          'Codigo leido correctamente',
+          JSON.stringify(barcodedata)
+        );
+      }
     }), (err) => {
       console.log("Error: ", err);
 

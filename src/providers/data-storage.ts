@@ -25,7 +25,7 @@ export class DataStorage {
     this.getList().then((values: any = []) => {
       values.push({
         num: identificacion,
-        date: new Date()
+        date: (new Date()).toDateString()
       });
 
       this.storage.set('list', values);    

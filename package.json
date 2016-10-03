@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "congreso_tic",
+  "author": "@anlijudavid",
+  "homepage": "http://twitter.com/anlijudavid",
   "private": true,
   "scripts": {
     "build": "ionic-app-scripts build",
