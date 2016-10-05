@@ -5,6 +5,9 @@ import { StatusBar } from 'ionic-native';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Registrados } from '../pages/registrados/registrados';
+import { QrVisor } from '../pages/qr-visor/qr-visor';
+import { Login } from '../pages/login/login';
+import { Evento } from '../pages/evento/evento';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,8 +24,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Login', component: Login },
       { title: 'Lector', component: Page1 },
       { title: 'Registrados', component: Registrados },
+      { title: 'Mi Qr', component: QrVisor },
+      { title: 'Evento', component: Evento },
       { title: 'Acerca de', component: Page2 }
     ];
 

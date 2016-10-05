@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController, AlertController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-import * as moment from 'moment';
+// import * as moment from 'moment';
 
 import { BarcodeScanner } from 'ionic-native';
 

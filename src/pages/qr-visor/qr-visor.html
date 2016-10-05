@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Visor</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>    
+    <qr-code [data]="'All QR Code data goes here!'" [size]="250"></qr-code>    
+    <ion-card-content>
+      <ion-card-title>
+        Este es tu codigo Qr
+      </ion-card-title>
+      <p>
+        Muestra este código a las personas encargadas de logistica.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
