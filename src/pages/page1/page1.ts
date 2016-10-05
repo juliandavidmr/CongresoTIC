@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController, ToastController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 // import * as moment from 'moment';
 
@@ -20,14 +20,12 @@ export class Page1 {
     public navCtrl: NavController,
     public alertCtrl: AlertController,
     public storage: Storage,
-    public listStorage: DataStorage
-  ) {
-
-  }
+    public listStorage: DataStorage,
+    public toastCtrl: ToastController
+  ) { }
 
   ionViewDidLoad() {
     // console.log("Moment: ", moment(new Date()));
-
     this.loadList();
   }
 
@@ -35,14 +33,6 @@ export class Page1 {
     this.listStorage.getList().then((list: any = []) => {
       if (list) {
         this.list = list;
-      }
-
-      var a = 10;
-      while (a-- > 0) {
-        this.list.push({
-          num: Math.random() * 1000000000,
-          date: new Date()
-        });
       }
     });
   }
@@ -54,6 +44,15 @@ export class Page1 {
       buttons: ['OK']
     });
     alert.present();
+  }
+
+  presentToast(message: string, time: number) {
+    let toast = this.toastCtrl.create({
+      message: message,
+      duration: time,
+      position: 'center'
+    });
+    toast.present();
   }
 
   readBarcode() {
@@ -69,10 +68,7 @@ export class Page1 {
         this.listStorage.add(barcodedata);
         this.loadList();
 
-        this.showAlert(
-          'Codigo leido correctamente',
-          JSON.stringify(barcodedata)
-        );
+        this.presentToast('Codigo leido correctamente', 3000);
       }
     }), (err) => {
       console.log("Error: ", err);
