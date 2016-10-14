@@ -2,7 +2,7 @@
 
   "schedule": [
     {
-      "date": "2047-05-17",
+      "date": "2016-10-19",
       "groups": [
         {
           "time": "8:00 am",
@@ -337,23 +337,17 @@
     }
   ],
 
-
   "map": [
     {
-      "name": "Monona Terrace Convention Center",
-      "lat": 43.071584,
-      "lng": -89.380120,
+      "name": "Universidad de la Amazonia",
+      "lat": 1.619875,
+      "lng": -75.604380,
       "center": true
     },
     {
-      "name": "Ionic HQ",
-      "lat": 43.074395,
-      "lng": -89.381056
-    },
-    {
-      "name": "Afterparty - Brocach Irish Pub",
-      "lat": 43.07336,
-      "lng": -89.38335
+      "name": "Audiorio Angel Cuniberti",
+      "lat": 1.619684,
+      "lng": -75.604244
     }
   ]
 

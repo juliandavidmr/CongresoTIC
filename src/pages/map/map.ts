@@ -9,7 +9,7 @@ declare var google: any;
   templateUrl: 'map.html'
 })
 export class MapPage {
-  constructor(public confData: ConferenceData) {}
+  constructor(public confData: ConferenceData) { }
 
   ionViewDidLoad() {
     this.confData.getMap().then(mapData => {

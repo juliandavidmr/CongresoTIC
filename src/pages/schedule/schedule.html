@@ -6,10 +6,10 @@
 
     <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
-        All
+        Todo
       </ion-segment-button>
       <ion-segment-button value="favorites">
-        Favorites
+        Favoritos
       </ion-segment-button>
     </ion-segment>
 
@@ -24,7 +24,7 @@
     <ion-searchbar color="primary"
                    [(ngModel)]="queryText"
                    (ionInput)="updateSchedule()"
-                   placeholder="Search">
+                   placeholder="Buscar">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
@@ -67,7 +67,7 @@
   </ion-list>
 
   <ion-list-header [hidden]="shownSessions > 0">
-      No Sessions Found
+      No hay horarios
   </ion-list-header>
 
 

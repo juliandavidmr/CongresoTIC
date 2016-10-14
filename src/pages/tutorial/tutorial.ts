@@ -22,18 +22,18 @@ export class TutorialPage {
   constructor(public navCtrl: NavController, public menu: MenuController) {
     this.slides = [
       {
-        title: 'Welcome to <b>ICA</b>',
-        description: 'The <b>Ionic Conference App</b> is a practical preview of the Ionic Framework in action, and a demonstration of proper code use.',
+        title: 'Bienvenido al primer congreso internacional <b>TIC</b>',
+        description: 'La Universidad de la Amazonia presenta el primer congreso internacional en TIC en Florencia, Caquetá, Colombia, con el objetivo de intercambiar experiencias académicas e investigativas relacionadas con las Tecnologías de la Información y las Comunicaciones para generar un desarrollo sustentable en la región Amazónica y el País.',
         image: 'assets/img/ica-slidebox-img-1.png',
       },
       {
-        title: 'What is Ionic?',
-        description: '<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.',
+        title: 'Acerca de los participantes',
+        description: 'Se tendrá la presencia y la participación de profesionales expertos tanto nacionales como internacionales y se convocará a la comunidad de investigadores para presentar sus ponencias y ser seleccionadas por pares evaluadores.',
         image: 'assets/img/ica-slidebox-img-2.png',
       },
       {
-        title: 'What is Ionic Platform?',
-        description: 'The <b>Ionic Platform</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.',
+        title: 'Revista Científica',
+        description: 'Las ponencias seleccionadas se publicaran en una edición especial de la Revista Científica ISSN 0124-2253 Categoría B índice de Colciencias (Siempre y cuando cumplan lo requerido por la revista para su publicación).',
         image: 'assets/img/ica-slidebox-img-3.png',
       }
     ];
