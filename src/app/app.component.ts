@@ -1,50 +1,113 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from 'ionic-native';
 
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
-import { Registrados } from '../pages/registrados/registrados';
-import { QrVisor } from '../pages/qr-visor/qr-visor';
-import { Login } from '../pages/login/login';
-import { Evento } from '../pages/evento/evento';
+import { Events, MenuController, Nav, Platform } from 'ionic-angular';
+// import { Splashscreen, StatusBar } from 'ionic-native';
+
+import { AccountPage } from '../pages/account/account';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { TabsPage } from '../pages/tabs/tabs';
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { Lector } from '../pages/lector/lector';
+
+import { ConferenceData } from '../providers/conference-data';
+import { UserData } from '../providers/user-data';
+
+export interface PageObj {
+  title: string;
+  component: any;
+  icon: string;
+  logsOut?: boolean;
+  index?: number;
+}
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.template.html'
 })
-export class MyApp {
+export class ConferenceApp {
+  // the root nav is a child of the root app component
+  // @ViewChild(Nav) gets a reference to the app's root nav
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  // List of pages that can be navigated to from the left menu
+  // the left menu only works after login
+  // the login page disables the left menu
+  appPages: PageObj[] = [
+    { title: 'Schedule', component: TabsPage, icon: 'calendar' },
+    { title: 'Lector', component: Lector, icon: 'calendar' },
+    { title: 'Speakers', component: TabsPage, index: 1, icon: 'contacts' },
+    { title: 'Map', component: TabsPage, index: 2, icon: 'map' },
+    { title: 'About', component: TabsPage, index: 3, icon: 'information-circle' },
+  ];
+  loggedInPages: PageObj[] = [
+    { title: 'Account', component: AccountPage, icon: 'person' },
+    { title: 'Logout', component: TabsPage, icon: 'log-out', logsOut: true }
+  ];
+  loggedOutPages: PageObj[] = [
+    { title: 'Login', component: LoginPage, icon: 'log-in' },
+    { title: 'Signup', component: SignupPage, icon: 'person-add' }
+  ];
+  rootPage: any = TutorialPage;
 
-  pages: Array<{title: string, component: any}>;
+  constructor(
+    public events: Events,
+    public userData: UserData,
+    public menu: MenuController,
+    platform: Platform,
+    confData: ConferenceData
+  ) {
+    // Call any initial plugins when ready
+    platform.ready().then(() => {
+      // StatusBar.styleDefault();
+      // Splashscreen.hide();
+    });
 
-  constructor(public platform: Platform) {
-    this.initializeApp();
+    // load the conference data
+    confData.load();
 
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Login', component: Login },
-      { title: 'Lector', component: Page1 },
-      { title: 'Registrados', component: Registrados },
-      { title: 'Mi Qr', component: QrVisor },
-      { title: 'Evento', component: Evento },
-      { title: 'Acerca de', component: Page2 }
-    ];
+    // decide which menu items should be hidden by current login status stored in local storage
+    this.userData.hasLoggedIn().then((hasLoggedIn) => {
+      this.enableMenu(hasLoggedIn === true);
+    });
 
+    this.listenToLoginEvents();
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
+  openPage(page: PageObj) {
+    // the nav component was found using @ViewChild(Nav)
+    // reset the nav to remove previous pages and only have this page
+    // we wouldn't want the back button to show in this scenario
+    if (page.index) {
+      this.nav.setRoot(page.component, {tabIndex: page.index});
+
+    } else {
+      this.nav.setRoot(page.component);
+    }
+
+    if (page.logsOut === true) {
+      // Give the menu time to close before changing to logged out
+      setTimeout(() => {
+        this.userData.logout();
+      }, 1000);
+    }
+  }
+
+  listenToLoginEvents() {
+    this.events.subscribe('user:login', () => {
+      this.enableMenu(true);
+    });
+
+    this.events.subscribe('user:signup', () => {
+      this.enableMenu(true);
+    });
+
+    this.events.subscribe('user:logout', () => {
+      this.enableMenu(false);
     });
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+  enableMenu(loggedIn) {
+    this.menu.enable(loggedIn, 'loggedInMenu');
+    this.menu.enable(!loggedIn, 'loggedOutMenu');
   }
 }
