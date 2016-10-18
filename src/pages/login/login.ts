@@ -54,7 +54,7 @@ export class LoginPage {
     let alert = this.alertCtrl.create({
       title: title,
       subTitle: desc,
-      buttons: ['Dismiss']
+      buttons: ['Ok']
     });
     alert.present();
   }
