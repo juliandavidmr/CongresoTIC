@@ -3,19 +3,19 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class Asistencia {
-
+export class Refrigerio {
+  
   data: any;
 
   constructor(public http: Http) {
-    console.log('Hello Asistencia Provider');
+    console.log('Hello Refrigerio Provider');
   }
-
+  
   load(cedula: string) {
     var body = {
       fk_idusuario: cedula
     }
-
+    
     return new Promise((resolve, reject) => {
       this.http.post('http://200.21.7.94/congreso/api/asistencia/registrar_asistencia', body)
         .map(res => res.json())
@@ -28,6 +28,6 @@ export class Asistencia {
             reject('Error de peticion.');
           }
         });
-    });
+    })
   }
 }

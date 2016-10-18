@@ -34,10 +34,10 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageObj[] = [
     { title: 'Horario', component: TabsPage, icon: 'calendar' },
-    { title: 'Lector', component: Lector, icon: 'read' },
-    { title: 'Speakers', component: TabsPage, index: 1, icon: 'contacts' },
-    { title: 'Map', component: TabsPage, index: 2, icon: 'map' },
-    { title: 'About', component: TabsPage, index: 3, icon: 'information-circle' },
+    { title: 'Lector', component: Lector, icon: 'barcode' },
+    { title: 'Ponentes', component: TabsPage, index: 1, icon: 'contacts' },
+    { title: 'Mapa', component: TabsPage, index: 2, icon: 'map' },
+    { title: 'Acerca de', component: TabsPage, index: 3, icon: 'information-circle' },
   ];
   loggedInPages: PageObj[] = [
     { title: 'Account', component: AccountPage, icon: 'person' },

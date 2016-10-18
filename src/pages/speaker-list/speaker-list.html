@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Speakers</ion-title>
+    <ion-title>Ponentes</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -28,7 +28,7 @@
           <h3>{{session.name}}</h3>
         </button>
         <button ion-item (click)="goToSpeakerDetail(speaker)">
-          <h3>About {{speaker.name}}</h3>
+          <h3>Acerca de {{speaker.name}}</h3>
         </button>
       </ion-list>
     </ion-card-content>
@@ -40,7 +40,7 @@
       </button>
       <button ion-button icon-left (click)="openSpeakerShare(speaker)" clear item-right>
         <ion-icon name="share"></ion-icon>
-        Share
+        Compartir
       </button>
     </ion-item>
 

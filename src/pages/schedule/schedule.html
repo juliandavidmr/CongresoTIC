@@ -6,7 +6,7 @@
 
     <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
-        Todo
+        Horario
       </ion-segment-button>
       <ion-segment-button value="favorites">
         Favoritos
@@ -53,10 +53,10 @@
 
         <ion-item-options>
           <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
-            Favorite
+            Favoritos
           </button>
           <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
-            Remove
+            Borrar
           </button>
         </ion-item-options>
 
@@ -67,8 +67,7 @@
   </ion-list>
 
   <ion-list-header [hidden]="shownSessions > 0">
-      No hay horarios
+    No hay horarios
   </ion-list-header>
-
 
 </ion-content>

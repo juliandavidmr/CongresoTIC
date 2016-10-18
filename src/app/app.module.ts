@@ -23,6 +23,7 @@ import { Lector } from '../pages/lector/lector';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { Asistencia } from '../providers/asistencia';
+import { Refrigerio } from '../providers/refrigerio'
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { Asistencia } from '../providers/asistencia';
     ConferenceData, 
     UserData,
     Storage,
-    Asistencia
+    Asistencia,
+    Refrigerio
   ]
 })
 export class AppModule {}
