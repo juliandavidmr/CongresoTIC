@@ -11,7 +11,7 @@
 
   <ion-list>
     <div class="logo">
-      <img src="assets/img/appicon.svg">
+      <img src="assets/img/02.png">
     </div>
 
     <form #loginForm="ngForm" novalidate>
@@ -21,7 +21,7 @@
         </ion-input>
       </ion-item>
       <p [hidden]="username.valid || submitted == false" color="danger" padding-left>
-        Username is required
+        Nombre de usuario requerido
       </p>
 
       <ion-item>
@@ -30,15 +30,12 @@
         </ion-input>
       </ion-item>
       <p [hidden]="password.valid || submitted == false" color="danger" padding-left>
-        Password is required
+        Contraseña requerida
       </p>
 
       <ion-row responsive-sm>
         <ion-col>
           <button ion-button (click)="onLogin(loginForm)" type="submit" color="primary" block>Login</button>
-        </ion-col>
-        <ion-col>
-          <button ion-button (click)="onSignup()" color="light" block>Signup</button>
         </ion-col>
       </ion-row>
     </form>

@@ -6,7 +6,6 @@ import { Storage } from '@ionic/storage';
 import { ConferenceApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
@@ -17,12 +16,11 @@ import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
-import { Lector } from '../pages/lector/lector';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { Asistencia } from '../providers/asistencia';
-import { Refrigerio } from '../providers/refrigerio'
+import { Auth } from '../providers/auth';
 
 @NgModule({
   declarations: [
@@ -31,18 +29,24 @@ import { Refrigerio } from '../providers/refrigerio'
     AccountPage,
     LoginPage,
     MapPage,
-    PopoverPage,
     SchedulePage,
     SessionDetailPage,
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
-    Lector    
+    TutorialPage
   ],
   imports: [
-    IonicModule.forRoot(ConferenceApp)
+    IonicModule.forRoot(ConferenceApp, {
+      backButtonText: 'Atras',
+      iconMode: 'ios',
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
+      tabsPlacement: 'bottom',
+      pageTransition: 'ios',
+      menuType: 'overlay'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -51,22 +55,20 @@ import { Refrigerio } from '../providers/refrigerio'
     AccountPage,
     LoginPage,
     MapPage,
-    PopoverPage,
     SchedulePage,
     SessionDetailPage,
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
-    Lector
+    TutorialPage
   ],
   providers: [
     ConferenceData, 
     UserData,
     Storage,
-    Asistencia,
-    Refrigerio
+    Asistencia,    
+    Auth
   ]
 })
 export class AppModule {}

@@ -8,7 +8,6 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
-import { Lector } from '../pages/lector/lector';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -34,7 +33,6 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageObj[] = [
     { title: 'Horario', component: TabsPage, icon: 'calendar' },
-    { title: 'Lector', component: Lector, icon: 'barcode' },
     { title: 'Ponentes', component: TabsPage, index: 1, icon: 'contacts' },
     { title: 'Mapa', component: TabsPage, index: 2, icon: 'map' },
     { title: 'Acerca de', component: TabsPage, index: 3, icon: 'information-circle' },
@@ -45,7 +43,7 @@ export class ConferenceApp {
   ];
   loggedOutPages: PageObj[] = [
     { title: 'Login', component: LoginPage, icon: 'log-in' },
-    { title: 'Signup', component: SignupPage, icon: 'person-add' }
+    { title: 'Cerrar sesión', component: SignupPage, icon: 'person-add' }
   ];
   rootPage: any = TutorialPage;
 
