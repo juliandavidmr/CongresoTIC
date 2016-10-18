@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-
 @Injectable()
 export class UserData {
   _favorites = [];
   HAS_LOGGED_IN = 'hasLoggedIn';
 
-  constructor(public events: Events, public storage: Storage) {}
+  constructor(public events: Events, 
+    public storage: Storage) {}
 
   hasFavorite(sessionName) {
     return (this._favorites.indexOf(sessionName) > -1);

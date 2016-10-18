@@ -2,26 +2,48 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { Storage } from '@ionic/storage';
+
 /*
   Inicio de sesion
 
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
 */
 @Injectable()
 export class Auth {
 
-  constructor(public http: Http) {
+  data: any;
+  USER_DATA: string = 'USER_DATA';
+
+  constructor(public http: Http, public storage: Storage) {
     console.log('Hello Auth Provider');
   }
-  
-  login() {
-    return new Promise((resolve, reject) => {
 
-    })
+  login(email: string, password: string) {
+    var body = {
+      "username": email,
+      "contraseña": password
+    }
+
+    return new Promise((resolve, reject) => {
+      this.http.post('http://200.21.7.94/congreso/api/usuario/select_usuario', body)
+        .map(res => res.json())
+        .subscribe(values => {
+          this.data = values;
+
+          if (values.result) {
+            resolve(this.data);
+          } else {
+            reject('Error de peticion.');
+          }
+        });
+    });
   }
-  
-  sign_out() {
+
+  getData() {    
+    return this.storage.get(this.USER_DATA);
+  }
+
+  signout() {
     
   }
 }

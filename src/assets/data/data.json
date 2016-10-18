@@ -1,5 +1,4 @@
 {
-
   "schedule": [
     {
       "date": "2016-10-19",
@@ -8,11 +7,13 @@
           "time": "8:00 am",
           "sessions": [
             {
-              "name": "Breakfast",
+              "name": "Validación de inscripción e ingreso",
               "timeStart": "8:00 am",
               "timeEnd": "9:00 am",
-              "location": "Main hallway",
-              "tracks": ["Food"]
+              "location": "Entrada del auditorio",
+              "tracks": [
+                "Food"
+              ]
             }
           ]
         },
@@ -20,96 +21,157 @@
           "time": "9:00 am",
           "sessions": [
             {
-              "name": "Introduction to Appcamp.io",
-              "location": "Room 2203",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Ellie Elephant"],
+              "name": "Acto de apertura",
               "timeStart": "9:00 am",
-              "timeEnd": "9:30 am",
-              "tracks": ["Ionic"]
-            },
-            {
-              "name": "Getting started with Ionic",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Ted Turtle"],
-              "timeStart": "9:30 am",
               "timeEnd": "9:45 am",
-              "tracks": ["Ionic"]
-            },
-            {
-              "name": "Tooling for Ionic",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Rachel Rabbit"],
-              "timeStart": "9:45 am",
-              "timeEnd": "10:00 am",
-              "tracks": ["Tooling"]
+              "location": "Entrada del auditorio",
+              "tracks": [
+                "Food"
+              ]
             }
           ]
         },
         {
-          "time": "10:00 am",
+          "time": "9:45 am",
           "sessions": [
             {
-              "name": "Migrating to Ionic2",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Eva Eagle", "Lionel Lion"],
+              "name": "Receso",
+              "timeStart": "9:45 am",
+              "timeEnd": "10:15 am",
+              "location": "Entrada del auditorio",
+              "tracks": [
+                "Food"
+              ]
+            }
+          ]
+        },
+        {
+          "time": "11:15 am",
+          "sessions": [
+            {
+              "name": "Ponencia Magistral (Colombia)",
+              "timeStart": "11:15 am",
+              "timeEnd": "12:00 am",
+              "location": "Entrada del auditorio",
+              "tracks": [
+                "Food"
+              ]
+            }
+          ]
+        },
+        {
+          "time": "Miercoles 19 Octubre",
+          "sessions": [
+            {
+              "name": "Flipped Classroom",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Flipped Classroom en la enseñanza de lógica y algoritmos en la universidad de la amazonia; una sistematización de experiencias.",
+              "speakerNames": [
+                "Especialista Jennifer Andrea Cano Guevara"
+              ],
+              "timeStart": "2:00 pm",
+              "timeEnd": "2:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Estrategia formativa",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Estrategia formativa con una herramienta tecnológica de contenido digital para la prevención de hipertensión arterial en adolescentes.",
+              "speakerNames": [
+                "Magister Yaneth Patricia Caviativa"
+              ],
+              "timeStart": "2:30 pm",
+              "timeEnd": "2:50 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Estrategias tecnológicas",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Estrategias tecnológicas para el fomento de la conservación ambiental.",
+              "speakerNames": [
+                "Estudiante del programa de Ingeniería de Sistemas de la Universidad de la Amazonia Mayra Alexandra González"
+              ],
+              "timeStart": "3:00 pm",
+              "timeEnd": "3:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Refrigerio",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "",
+              "speakerNames": [
+                "No corresponde"
+              ],
+              "timeStart": "3:30 pm",
+              "timeEnd": "4:00 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Gamificación",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Gamificación una estrategia de fortalecimiento en el aprendizaje de la ingeniería de sistemas, experiencia significativa en la Universidad Cooperativa de Colombia sede Popayán.",
+              "speakerNames": [
+                "Especialista Julián Andrés Mera Paz"
+              ],
+              "timeStart": "4:00 pm",
+              "timeEnd": "4:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Presentación de poster",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Presentación de poster Plataforma para gestión documental de los proyectos presentado por los grupos y semilleros de investigación de La Universidad de la Amazonia, aplicando ISO 9001:2008 bajo desarrollo controlado por modelos",
+              "speakerNames": [
+                "No corresponde"
+              ],
+              "timeStart": "4:30 pm",
+              "timeEnd": "4:50 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Preguntas y cierre",
+              "location": "Auditorio Angel Cuniberti",
+              "description": "Preguntas",
+              "speakerNames": [
+                "Todos"
+              ],
+              "timeStart": "5:00 pm",
+              "timeEnd": "5:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            }
+          ]
+        },
+        {
+          "time": "Jueves 20 Octubre",
+          "sessions": [
+            {
+              "name": "Fedesoft",
+              "location": "Auditorio",
+              "description": "El papel de las entidades privadas en la dinamización del sector TI",
+              "speakerNames": [
+                "Ximena Duque Álzate, Directora de Empresas Competitivas - FEDESOFT",
+                "John Mauricio Pinzón Pena Director de Proyectos Especiales - InfoCASE, E.U."
+              ],
               "timeStart": "10:00 am",
               "timeEnd": "10:15 am",
-              "tracks": ["Ionic"]
-            },
-            {
-              "name": "The evolution of Ionicons",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Isabella Iguana", "Eva Eagle"],
-              "timeStart": "10:15 am",
-              "timeEnd": "10:30 am",
-              "tracks": ["Design"]
-            },
-            {
-              "name": "Ionic.io Services",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Charlie Cheetah"],
-              "timeStart": "10:30 am",
-              "timeEnd": "11:00 am",
-              "tracks": ["Services"]
-            }
-          ]
-        },
-        {
-          "time": "11:00 am",
-          "sessions": [
-            {
-              "name": "Ionic Workshop",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Karl Kitten", "Lionel Lion"],
-              "timeStart": "11:00 am",
-              "timeEnd": "11:45 am",
-              "tracks": ["Workshop"]
-            },
-            {
-              "name": "Community Interaction",
-              "location": "Room 2203",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Lionel Lion", "Gino Giraffe"],
-              "timeStart": "11:30 am",
-              "timeEnd": "11:50 am",
-              "tracks": ["Communication"]
-            },
-            {
-              "name": "Navigation in Ionic",
-              "location": "Room 2203",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Rachel Rabbit", "Eva Eagle"],
-              "timeStart": "11:30 am",
-              "timeEnd": "12:00 pm",
-              "tracks": ["Navigation"]
-            }
+              "tracks": [
+                "Ionic"
+              ]
+            }            
           ]
         },
         {
@@ -121,39 +183,9 @@
               "description": "Come grab lunch with all the Ionic fanatics and talk all things Ionic",
               "timeStart": "12:00 pm",
               "timeEnd": "1:00 pm",
-              "tracks": ["Food"]
-            }
-          ]
-        },
-        {
-          "time": "1:00 pm",
-          "sessions": [
-            {
-              "name": "Ionic in the Enterprise",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Paul Puppy"],
-              "timeStart": "1:00 pm",
-              "timeEnd": "1:15 pm",
-              "tracks": ["Communication"]
-            },
-            {
-              "name": "Ionic Worldwide",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Gino Giraffe"],
-              "timeStart": "1:15 pm",
-              "timeEnd": "1:30 pm",
-              "tracks": ["Communication"]
-            },
-            {
-              "name": "The Ionic package service",
-              "location": "Room 2203",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Molly Mouse", "Burt Bear"],
-              "timeStart": "1:30 pm",
-              "timeEnd": "2:00 pm",
-              "tracks": ["Services"]
+              "tracks": [
+                "Food"
+              ]
             }
           ]
         },
@@ -164,28 +196,42 @@
               "name": "Push Notifications in Ionic",
               "location": "Room 2202",
               "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Burt Bear", "Charlie Cheetah"],
+              "speakerNames": [
+                "Burt Bear",
+                "Charlie Cheetah"
+              ],
               "timeStart": "2:00 pm",
               "timeEnd": "2:30 pm",
-              "tracks": ["Services"]
+              "tracks": [
+                "Services"
+              ]
             },
             {
               "name": "Ionic Documentation",
               "location": "Room 2202",
               "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Donald Duck"],
+              "speakerNames": [
+                "Donald Duck"
+              ],
               "timeStart": "2:30 pm",
               "timeEnd": "2:45 pm",
-              "tracks": ["Documentation"]
+              "tracks": [
+                "Documentation"
+              ]
             },
             {
               "name": "UX planning in Ionic",
               "location": "Room 2203",
               "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Isabella Iguana", "Ellie Elephant"],
+              "speakerNames": [
+                "Isabella Iguana",
+                "Ellie Elephant"
+              ],
               "timeStart": "2:45 pm",
               "timeEnd": "3:00 pm",
-              "tracks": ["Design"]
+              "tracks": [
+                "Design"
+              ]
             }
           ]
         },
@@ -196,147 +242,72 @@
               "name": "Directives in Ionic",
               "location": "Room 2201",
               "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Ted Turtle"],
+              "speakerNames": [
+                "Ted Turtle"
+              ],
               "timeStart": "3:00 pm",
               "timeEnd": "3:30 pm",
-              "tracks": ["Angular"]
+              "tracks": [
+                "Angular"
+              ]
             },
             {
               "name": "Mobile States",
               "location": "Room 2202",
               "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Rachel Rabbit"],
+              "speakerNames": [
+                "Rachel Rabbit"
+              ],
               "timeStart": "3:30 pm",
               "timeEnd": "3:45 pm",
-              "tracks": ["Navigation"]
+              "tracks": [
+                "Navigation"
+              ]
             }
           ]
         }
       ]
     }
   ],
-
-
   "speakers": [
     {
-      "name": "Burt Bear",
-      "profilePic": "assets/img/speakers/bear.jpg",
-      "twitter": "ionicframework",
-      "about": "Burt is a Bear.",
-      "location": "Everywhere",
-      "email": "burt@example.com",
+      "name": "Adriana Patricia Gallego",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Adriana%20patricia%20Gallego.jpg",
+      "about": "Doctorado Universidad de Valencia Ciencias fisicas Didacticas de las ciencias",
+      "location": "Colombia"
+    },
+    {
+      "name": "Carlos Morell",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Carlos%20Morell.jpg",
+      "about": "Jefe de laboratorio de investigaciones en inteligencia artificial de la Universidad Central de 'Martha Abreu' de las Villas - Cuba",
+      "location": "Cuba",
       "phone": "+1-541-754-3010"
     },
     {
-      "name": "Charlie Cheetah",
-      "profilePic": "assets/img/speakers/cheetah.jpg",
-      "twitter": "ionicframework",
-      "about": "Charlie is a Cheetah.",
-      "location": "Everywhere",
-      "email": "charlie@example.com",
-      "phone": "+1-541-754-3010"
+      "name": "Jose Nelson Perez",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Jose%20Nelson%20Perez.jpg",
+      "about": "Director grupo de investigacion GICOGE de la universidad distrital Francisco Jose de Caldas",
+      "location": "Colombia"
     },
     {
-      "name": "Donald Duck",
-      "profilePic": "assets/img/speakers/duck.jpg",
-      "twitter": "ionicframework",
-      "about": "Donald is a Duck.",
-      "location": "Everywhere",
-      "email": "donald@example.com",
-      "phone": "+1-541-754-3010"
+      "name": "Sergio Cleger Tamayo",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Sergio_Cleger-Tamayo.jpg",
+      "about": "Responsable de una de las sub-líneas de la línea de investigación de UHOLM “Informatización de la Sociedad",
+      "location": "Brasil"
     },
     {
-      "name": "Eva Eagle",
-      "profilePic": "assets/img/speakers/eagle.jpg",
-      "twitter": "ionicframework",
-      "about": "Eva is an Eagle.",
-      "location": "Everywhere",
-      "email": "eva@example.com",
-      "phone": "+1-541-754-3010"
+      "name": "Dr. Hector Andres Melgar",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/melgar.jpg",
+      "about": "Ingeniero Informático por la Pontificia Universidad Católica del Perú (PUCP, 2000), magíster en Ingeniería Biomédica por la PUCP (2005) y doctor en Ingeniería y Gestión del Conocimiento por la Universidad Federal de Santa Catarina (2011), Brasil",
+      "location": "Perú"
     },
     {
-      "name": "Ellie Elephant",
-      "profilePic": "assets/img/speakers/elephant.jpg",
-      "twitter": "ionicframework",
-      "about": "Ellie is an Elephant.",
-      "location": "Everywhere",
-      "email": "ellie@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Gino Giraffe",
-      "profilePic": "assets/img/speakers/giraffe.jpg",
-      "twitter": "ionicframework",
-      "about": "Gino is a Giraffe.",
-      "location": "Everywhere",
-      "email": "gino@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Isabella Iguana",
-      "profilePic": "assets/img/speakers/iguana.jpg",
-      "twitter": "ionicframework",
-      "about": "Isabella is an Iguana.",
-      "location": "Everywhere",
-      "email": "isabella@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Karl Kitten",
-      "profilePic": "assets/img/speakers/kitten.jpg",
-      "twitter": "ionicframework",
-      "about": "Karl is a Kitten.",
-      "location": "Everywhere",
-      "email": "karl@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Lionel Lion",
-      "profilePic": "assets/img/speakers/lion.jpg",
-      "twitter": "ionicframework",
-      "about": "Lionel is a Lion.",
-      "location": "Everywhere",
-      "email": "lionel@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Molly Mouse",
-      "profilePic": "assets/img/speakers/mouse.jpg",
-      "twitter": "ionicframework",
-      "about": "Molly is a Mouse.",
-      "location": "Everywhere",
-      "email": "molly@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Paul Puppy",
-      "profilePic": "assets/img/speakers/puppy.jpg",
-      "twitter": "ionicframework",
-      "about": "Paul is a Puppy.",
-      "location": "Everywhere",
-      "email": "paul@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Rachel Rabbit",
-      "profilePic": "assets/img/speakers/rabbit.jpg",
-      "twitter": "ionicframework",
-      "about": "Rachel is a Rabbit.",
-      "location": "Everywhere",
-      "email": "rachel@example.com",
-      "phone": "+1-541-754-3010"
-    },
-    {
-      "name": "Ted Turtle",
-      "profilePic": "assets/img/speakers/turtle.jpg",
-      "twitter": "ionicframework",
-      "about": "Ted is a Turtle.",
-      "location": "Everywhere",
-      "email": "ted@example.com",
-      "phone": "+1-541-754-3010"
+      "name": "PhD. Ricardo Antonio Gacitua Bustos",
+      "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/gacitua.jpg",
+      "about": "Ph.D. otorgado por The School of Computing and Communication de la Universidad de Lancaster, Inglaterra",
+      "location": "Chile"
     }
   ],
-
   "map": [
     {
       "name": "Universidad de la Amazonia",
@@ -350,5 +321,4 @@
       "lng": -75.604244
     }
   ]
-
 }
