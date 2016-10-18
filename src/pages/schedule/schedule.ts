@@ -9,7 +9,6 @@ import { AlertController, App, ItemSliding, List, ModalController, NavController
 import moment from 'moment';
 
 import { ConferenceData } from '../../providers/conference-data';
-import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { UserData } from '../../providers/user-data';
 
@@ -69,19 +68,6 @@ export class SchedulePage {
     });
   }
 
-  presentFilter() {
-    let modal = this.modalCtrl.create(ScheduleFilterPage, this.excludeTracks);
-    modal.present();
-
-    modal.onDidDismiss((data: any[]) => {
-      if (data) {
-        this.excludeTracks = data;
-        this.updateSchedule();
-      }
-    });
-
-  }
-
   goToSessionDetail(sessionData) {
     // go to the session detail page
     // and pass in the session data
@@ -93,14 +79,14 @@ export class SchedulePage {
     if (this.user.hasFavorite(sessionData.name)) {
       // woops, they already favorited it! What shall we do!?
       // prompt them to remove it
-      this.removeFavorite(slidingItem, sessionData, 'Favorite already added');
+      this.removeFavorite(slidingItem, sessionData, 'Ya se encuentra como favorito');
     } else {
       // remember this session as a user favorite
       this.user.addFavorite(sessionData.name);
 
       // create an alert instance
       let alert = this.alertCtrl.create({
-        title: 'Favorite Added',
+        title: 'Favorito añadido!',
         buttons: [{
           text: 'OK',
           handler: () => {
@@ -121,7 +107,7 @@ export class SchedulePage {
       message: 'Would you like to remove this session from your favorites?',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'Cancelar',
           handler: () => {
             // they clicked the cancel button, do not remove the session
             // close the sliding item and hide the option buttons
@@ -129,7 +115,7 @@ export class SchedulePage {
           }
         },
         {
-          text: 'Remove',
+          text: 'Quitar',
           handler: () => {
             // they want to remove this session from their favorites
             this.user.removeFavorite(sessionData.name);
