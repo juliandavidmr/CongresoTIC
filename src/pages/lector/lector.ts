@@ -5,6 +5,7 @@ import { BarcodeScanner } from 'ionic-native';
 
 import { Asistencia } from '../../providers/asistencia';
 import { Refrigerio } from '../../providers/refrigerio';
+import { Auth } from '../../providers/auth';
 
 @Component({
   selector: 'page-lector',
@@ -12,15 +13,27 @@ import { Refrigerio } from '../../providers/refrigerio';
 })
 export class Lector {
 
+  autenticado: boolean = false;
+
   constructor(
     public navCtrl: NavController,
     public alertCtrl: AlertController,
     public toastCtrl: ToastController,
     public api_asistencia: Asistencia,
-    public api_refrigerio: Refrigerio
+    public api_refrigerio: Refrigerio,
+    public auth: Auth
   ) { }
 
-  ionViewDidLoad() {    
+  ionViewDidLoad() {
+    this.auth.getData().then(value => {
+      if (value.idUsuario && value.Username) {
+        
+      } else {
+        
+      }
+    }).catch(err => {
+
+    });
   }
 
   showAlert(title: string, subtitle: string) {

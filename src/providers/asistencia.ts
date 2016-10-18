@@ -22,11 +22,7 @@ export class Asistencia {
         .subscribe(values => {
           this.data = values;
 
-          if(values.result) {
-            resolve(this.data);
-          } else {
-            reject('Error de peticion.');
-          }
+          resolve(this.data);
         });
     });
   }

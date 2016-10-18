@@ -18,11 +18,13 @@ import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { Lector } from '../pages/lector/lector';
+import { Miqr } from '../pages/miqr/miqr';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { Asistencia } from '../providers/asistencia';
-import { Refrigerio } from '../providers/refrigerio'
+import { Refrigerio } from '../providers/refrigerio';
+import { Auth } from '../providers/auth';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { Refrigerio } from '../providers/refrigerio'
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    Lector    
+    Lector,
+    Miqr
   ],
   imports: [
     IonicModule.forRoot(ConferenceApp)
@@ -59,14 +62,16 @@ import { Refrigerio } from '../providers/refrigerio'
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    Lector
+    Lector,
+    Miqr
   ],
   providers: [
     ConferenceData, 
     UserData,
     Storage,
     Asistencia,
-    Refrigerio
+    Refrigerio,
+    Auth  
   ]
 })
 export class AppModule {}

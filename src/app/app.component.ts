@@ -9,6 +9,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { Lector } from '../pages/lector/lector';
+import { Miqr } from '../pages/miqr/miqr';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -34,8 +35,9 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageObj[] = [
     { title: 'Horario', component: TabsPage, icon: 'calendar' },
-    { title: 'Lector', component: Lector, icon: 'barcode' },
+    { title: 'Lector', component: Lector, icon: 'qr-scanner' },
     { title: 'Ponentes', component: TabsPage, index: 1, icon: 'contacts' },
+    { title: 'Mi Qr', component: Miqr, index: 1, icon: 'barcode' },
     { title: 'Mapa', component: TabsPage, index: 2, icon: 'map' },
     { title: 'Acerca de', component: TabsPage, index: 3, icon: 'information-circle' },
   ];
