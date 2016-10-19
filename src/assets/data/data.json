@@ -171,97 +171,309 @@
               "tracks": [
                 "Ionic"
               ]
-            }            
-          ]
-        },
-        {
-          "time": "12:00 pm",
-          "sessions": [
+            },
             {
-              "name": "Lunch",
-              "location": "Auditorium",
-              "description": "Come grab lunch with all the Ionic fanatics and talk all things Ionic",
-              "timeStart": "12:00 pm",
-              "timeEnd": "1:00 pm",
+              "name": "Ponencia Magistral (Chile)",
+              "location": "Auditorio",
+              "description": "Web Semántica - Ingeniería de requisitos - Lenguaje natural",
+              "speakerNames": [
+                "DR. RICARDO ANTORIO GACITUA BUSTOS"
+              ],
+              "timeStart": "9:00 am",
+              "timeEnd": "9:45 am",
               "tracks": [
-                "Food"
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Receso",
+              "location": "Auditorio",
+              "description": "Receso",
+              "speakerNames": [
+                "No corresponde"
+              ],
+              "timeStart": "9:45 am",
+              "timeEnd": "10:15 am",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Desarrollo de software",
+              "location": "Auditorio",
+              "description": "Ponencia Magistral (Perú)",
+              "speakerNames": [
+                "DR. HECTOR ANDRES MELGAR"
+              ],
+              "timeStart": "10:15 am",
+              "timeEnd": "11:00 am",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Experiencias en la formación doctoral",
+              "location": "Auditorio",
+              "description": "Ponencia Magistral (Colombia)",
+              "speakerNames": [
+                "DR. GIOVANNY MAURICIO TARAZONA BERMUDEZ"
+              ],
+              "timeStart": "11:15 am",
+              "timeEnd": "12:00 am",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "(Virtual): Hacia la construcción de un modelo predictivo",
+              "location": "Auditorio",
+              "description": "(Virtual): Hacia la construcción de un modelo predictivo de deserción académica basado en técnicas de minería de datos Ponente: Doctor Carlos Enrique Montenegro Marín",
+              "speakerNames": [
+                "Doctor Carlos Enrique Montenegro Marín"
+              ],
+              "timeStart": "2:00 pm",
+              "timeEnd": "2:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "La enseñanza abierta como estrategia",
+              "location": "Auditorio",
+              "description": "La enseñanza abierta como estrategia para la formación en competencias investigativas en Educación Superior.",
+              "speakerNames": [
+                "Especialista Denis Lorena Alvarez Guayara"
+              ],
+              "timeStart": "2:30 pm",
+              "timeEnd": "2:50 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "SAT",
+              "location": "Auditorio",
+              "description": " Los Sat (Sistemas de Alertas Tempranas)",
+              "speakerNames": [
+                "Estudiante Juan Carlos Villanueva"
+              ],
+              "timeStart": "3:00 pm",
+              "timeEnd": "3:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Receso",
+              "location": "Auditorio",
+              "description": "",
+              "speakerNames": [
+                "No corresponde"
+              ],
+              "timeStart": "3:30 pm",
+              "timeEnd": "4:00 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Presentación de poster ",
+              "location": "Auditorio",
+              "description": "Herramienta Tecnológica para la Visualización Web y Gestión de Eventos de los Semilleros de Investigación de la Universidad de la Amazonia",
+              "speakerNames": [
+                "Estudiantes"
+              ],
+              "timeStart": "4:00 pm",
+              "timeEnd": "4:20 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Presentación de poster ",
+              "location": "Auditorio",
+              "description": "Prototipo de un sistema para la gestión de los procesos electorales de la universidad de la amazonia en su fase I: sistematización del proceso",
+              "speakerNames": [
+                "Estudiantes"
+              ],
+              "timeStart": "4:30 pm",
+              "timeEnd": "4:50 pm",
+              "tracks": [
+                "Ionic"
+              ]
+            },
+            {
+              "name": "Preguntas y cierre",
+              "location": "Auditorio",
+              "description": "",
+              "speakerNames": [
+                ""
+              ],
+              "timeStart": "5:00 pm",
+              "timeEnd": "5:20 pm",
+              "tracks": [
+                "Ionic"
               ]
             }
           ]
         },
         {
-          "time": "2:00 pm",
+          "time": "Viernes 21 Octubre",
           "sessions": [
             {
-              "name": "Push Notifications in Ionic",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "name": "Diseño de un sistema",
+              "location": "Auditorio",
+              "description": "Diseño de un sistema para garantizar la disponibilidad de los servicios informáticos en empresas de servicios públicos en Florencia -Caquetá",
               "speakerNames": [
-                "Burt Bear",
-                "Charlie Cheetah"
+                "Especialista Daniel Camilo Duran Camacho"
               ],
-              "timeStart": "2:00 pm",
-              "timeEnd": "2:30 pm",
+              "timeStart": "8:00 am",
+              "timeEnd": "8:20 am",
               "tracks": [
                 "Services"
               ]
             },
             {
-              "name": "Ionic Documentation",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "name": "Programación competitiva",
+              "location": "Auditorio",
+              "description": "Uso de la programación competitiva como aporte a la enseñanza de la Lógica Algorítmica. Experiencia Universidad de la Amazonia",
               "speakerNames": [
-                "Donald Duck"
+                "Universidad de la Amazonia Yilver Estiven Molina Hurtatiz"
               ],
-              "timeStart": "2:30 pm",
-              "timeEnd": "2:45 pm",
+              "timeStart": "8:30 am",
+              "timeEnd": "8:50 am",
+              "tracks": [
+                "Services"
+              ]
+            },
+            {
+              "name": "Ponencia Magistral (Cuba)",
+              "location": "Auditorio",
+              "description": "Aplicaciones recientes del Aprendizaje Automático y direcciones futuras -Inteligencia Artificial",
+              "speakerNames": [
+                "DR. CARLOS ALEXIS MORELL PEREZ"
+              ],
+              "timeStart": "9:00 am",
+              "timeEnd": "9:45 am",
+              "tracks": [
+                "Services"
+              ]
+            },
+            {
+              "name": "Receso",
+              "location": "Auditorio",
+              "description": "",
+              "speakerNames": [
+                ""
+              ],
+              "timeStart": "9:45 am",
+              "timeEnd": "10:15 am",
+              "tracks": [
+                "Services"
+              ]
+            },
+            {
+              "name": "Ponencia Magistral (Colombia)",
+              "location": "Auditorio",
+              "description": " Arquitectura de seguridad de un entorno computacional para eCiencia en la nube",
+              "speakerNames": [
+                "DR. JOSE NELSON PEREZ"
+              ],
+              "timeStart": "10:15 am",
+              "timeEnd": "11:05 am",
               "tracks": [
                 "Documentation"
               ]
             },
             {
-              "name": "UX planning in Ionic",
-              "location": "Room 2203",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "name": "Una ventana hacia un Caquetá inimaginable",
+              "location": "Auditorio",
+              "description": "Una ventana hacia un Caquetá inimaginable, experiencia para articular la lógica y la solución de problemas en ingeniería ",
               "speakerNames": [
-                "Isabella Iguana",
-                "Ellie Elephant"
+                "Especialista Diana Carolina Chico"
               ],
-              "timeStart": "2:45 pm",
-              "timeEnd": "3:00 pm",
+              "timeStart": "11:10 am",
+              "timeEnd": "11:30 pm",
               "tracks": [
-                "Design"
-              ]
-            }
-          ]
-        },
-        {
-          "time": "3:00",
-          "sessions": [
-            {
-              "name": "Directives in Ionic",
-              "location": "Room 2201",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": [
-                "Ted Turtle"
-              ],
-              "timeStart": "3:00 pm",
-              "timeEnd": "3:30 pm",
-              "tracks": [
-                "Angular"
+                "Documentation"
               ]
             },
             {
-              "name": "Mobile States",
-              "location": "Room 2202",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "name": "Aproximación al Modelo de Estimación...",
+              "location": "Auditorio",
+              "description": "Aproximación al Modelo de Estimación Para El Uso De Agua Del Rio Bogotá, Basado En El Análisis De Vertimientos En Aguas Superficiales",
               "speakerNames": [
-                "Rachel Rabbit"
+                "Doctor Carlos Enrique Montenegro Marín"
+              ],
+              "timeStart": "11:35 am",
+              "timeEnd": "12:00 am",
+              "tracks": [
+                "Design"
+              ]
+            },
+            {
+              "name": "Aproximación al Modelo de Estimación...",
+              "location": "Auditorio",
+              "description": "Aplicación móvil de realidad aumentada para la ubicación de las aulas de clase en el Campus Porvenir de la Universidad de la Amazonia",
+              "speakerNames": [
+                "Estudiante Carlos Alberto Sandoval"
+              ],
+              "timeStart": "2:00 pm",
+              "timeEnd": "2:20 pm",
+              "tracks": [
+                "Design"
+              ]
+            },
+            {
+              "name": "FORO",
+              "location": "",
+              "description": "",
+              "speakerNames": [
+                ""
+              ],
+              "timeStart": "2:30 pm",
+              "timeEnd": "2:50 pm",
+              "tracks": [
+                "Design"
+              ]
+            },
+            {
+              "name": "FORO",
+              "location": "",
+              "description": "",
+              "speakerNames": [
+                ""
+              ],
+              "timeStart": "3:00 pm",
+              "timeEnd": "3:20 pm",
+              "tracks": [
+                "Design"
+              ]
+            },
+            {
+              "name": "Receso",
+              "location": "",
+              "description": "",
+              "speakerNames": [
+                ""
               ],
               "timeStart": "3:30 pm",
-              "timeEnd": "3:45 pm",
+              "timeEnd": "4:00 pm",
               "tracks": [
-                "Navigation"
+                "Design"
+              ]
+            },
+            {
+              "name": "Cierre",
+              "location": "",
+              "description": "Cierre del congreso",
+              "speakerNames": [
+                ""
+              ],
+              "timeStart": "4:00 pm",
+              "timeEnd": "5:20 pm",
+              "tracks": [
+                "Design"
               ]
             }
           ]
