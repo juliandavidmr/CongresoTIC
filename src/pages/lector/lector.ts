@@ -87,7 +87,7 @@ export class Lector {
 
           this.api_asistencia.load(cedula, id_usuario).then(result => {
             this.showAlert(
-              'Registrado correctamente',
+              'Alerta',
               'Resultado: '.concat(JSON.stringify(result))
             );
           }).catch(err => {
@@ -128,7 +128,7 @@ export class Lector {
           var id_usuario = this.user.idUsuario;
 
           this.api_refrigerio.load(cedula, id_usuario).then(result => {
-            this.showAlert('Refrigerio registrado correctamente', 'Correcto: '.concat(JSON.stringify(result)));
+            this.showAlert('Alerta', 'Mensaje: '.concat(JSON.stringify(result)));
           }).catch(err => {
             this.showAlert('Error al registrar el refrigerio', 'No se registró nada.');
           });
