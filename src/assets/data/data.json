@@ -26,7 +26,7 @@
               "timeEnd": "9:45 am",
               "location": "Entrada del auditorio",
               "tracks": [
-                "Food"
+                "Ionic"
               ]
             }
           ]
@@ -46,6 +46,23 @@
           ]
         },
         {
+          "time": "10:15 am",
+          "sessions": [
+            {
+              "name": "Ponencia Magistral (Brasil)",
+              "timeStart": "10:15 am",
+              "timeEnd": "11:00 am",
+              "location": "Auditorio",
+              "speakerNames": [
+                "DR. SERGIO CLEGER TAMAYO"
+              ],
+              "tracks": [
+                "Food"
+              ]
+            }
+          ]
+        },
+        {
           "time": "11:15 am",
           "sessions": [
             {
@@ -53,6 +70,9 @@
               "timeStart": "11:15 am",
               "timeEnd": "12:00 am",
               "location": "Entrada del auditorio",
+              "speakerNames": [
+                "DRA. ADRIANA PATRICIA GALLEGO"
+              ],
               "tracks": [
                 "Food"
               ]
@@ -111,7 +131,7 @@
               "timeStart": "3:30 pm",
               "timeEnd": "4:00 pm",
               "tracks": [
-                "Ionic"
+                "Food"
               ]
             },
             {
@@ -166,8 +186,8 @@
                 "Ximena Duque Álzate, Directora de Empresas Competitivas - FEDESOFT",
                 "John Mauricio Pinzón Pena Director de Proyectos Especiales - InfoCASE, E.U."
               ],
-              "timeStart": "10:00 am",
-              "timeEnd": "10:15 am",
+              "timeStart": "8:00 am",
+              "timeEnd": "9:00 am",
               "tracks": [
                 "Ionic"
               ]
@@ -195,7 +215,7 @@
               "timeStart": "9:45 am",
               "timeEnd": "10:15 am",
               "tracks": [
-                "Ionic"
+                "Food"
               ]
             },
             {
@@ -234,7 +254,7 @@
               "timeStart": "2:00 pm",
               "timeEnd": "2:20 pm",
               "tracks": [
-                "Ionic"
+                "Documentation"
               ]
             },
             {
@@ -273,11 +293,11 @@
               "timeStart": "3:30 pm",
               "timeEnd": "4:00 pm",
               "tracks": [
-                "Ionic"
+                "Food"
               ]
             },
             {
-              "name": "Presentación de poster ",
+              "name": "Presentación de poster 1",
               "location": "Auditorio",
               "description": "Herramienta Tecnológica para la Visualización Web y Gestión de Eventos de los Semilleros de Investigación de la Universidad de la Amazonia",
               "speakerNames": [
@@ -290,7 +310,7 @@
               ]
             },
             {
-              "name": "Presentación de poster ",
+              "name": "Presentación de poster 2",
               "location": "Auditorio",
               "description": "Prototipo de un sistema para la gestión de los procesos electorales de la universidad de la amazonia en su fase I: sistematización del proceso",
               "speakerNames": [
@@ -312,7 +332,7 @@
               "timeStart": "5:00 pm",
               "timeEnd": "5:20 pm",
               "tracks": [
-                "Ionic"
+                "Services"
               ]
             }
           ]
@@ -393,7 +413,7 @@
                 "Especialista Diana Carolina Chico"
               ],
               "timeStart": "11:10 am",
-              "timeEnd": "11:30 pm",
+              "timeEnd": "11:30 am",
               "tracks": [
                 "Documentation"
               ]
