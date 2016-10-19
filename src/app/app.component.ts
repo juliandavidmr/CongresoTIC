@@ -9,6 +9,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { Miqr } from '../pages/miqr/miqr';
+import { SchedulePage } from '../pages/schedule/schedule';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -37,6 +38,7 @@ export class ConferenceApp {
     { title: 'Ponentes', component: TabsPage, index: 1, icon: 'contacts' },
     { title: 'Mapa', component: TabsPage, index: 2, icon: 'map' },
     { title: 'Mi Qr', component: Miqr, index: 2, icon: 'barcode' },
+    { title: 'Intro', component: TutorialPage, icon: 'calendar' },
     { title: 'Acerca de', component: TabsPage, index: 3, icon: 'information-circle' },
   ];
   loggedInPages: PageObj[] = [
@@ -47,7 +49,7 @@ export class ConferenceApp {
     { title: 'Login', component: LoginPage, icon: 'log-in' },
     { title: 'Cerrar sesión', component: SignupPage, icon: 'person-add' }
   ];
-  rootPage: any = TutorialPage;
+  rootPage: any = SchedulePage;
 
   constructor(
     public events: Events,
