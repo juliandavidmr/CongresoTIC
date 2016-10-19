@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="udla.ionic.congreso" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>CongresoTIC</name>
+<widget id="udla.ionic.congresolector" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Logistica CTIC</name>
     <description>
         Aplicacion movil para el congreso TIC
   </description>

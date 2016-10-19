@@ -11,9 +11,10 @@ export class Asistencia {
     console.log('Hello Asistencia Provider');
   }
 
-  load(cedula: string) {
+  load(cedula: string, id_usuario: number) {
     var body = {
-      fk_idusuario: cedula
+      fk_idusuario: cedula,
+      userid: id_usuario
     }
 
     return new Promise((resolve, reject) => {
@@ -21,6 +22,8 @@ export class Asistencia {
         .map(res => res.json())
         .subscribe(values => {
           this.data = values;
+
+          console.log('Asistencia registrada, data: ', this.data);        
 
           resolve(this.data);
         });

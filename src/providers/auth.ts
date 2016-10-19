@@ -13,6 +13,7 @@ export class Auth {
 
   data: any;
   private USER_DATA: string = 'USER_DATA';
+  private LOGISTIC: string = 'LOGISTICA';
 
   constructor(
     public http: Http,
@@ -38,6 +39,7 @@ export class Auth {
             console.log('Data: ', values.data[0]);
 
             this.storage.set(this.USER_DATA, values.data[0]);
+            this.storage.set(this.LOGISTIC, values.logistica);
 
             resolve(this.data);
           } else {
@@ -50,6 +52,11 @@ export class Auth {
   getData() {
     return this.storage.get(this.USER_DATA);
   }
+
+  getLogistica() {
+    return this.storage.get(this.LOGISTIC);
+  }
+
 
   signout() {
     this.storage.set(this.USER_DATA, undefined);

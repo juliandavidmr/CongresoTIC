@@ -5,9 +5,7 @@ import { Events, MenuController, Nav, Platform } from 'ionic-angular';
 
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
-import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
-import { TutorialPage } from '../pages/tutorial/tutorial';
 import { Lector } from '../pages/lector/lector';
 import { Miqr } from '../pages/miqr/miqr';
 
@@ -46,10 +44,9 @@ export class ConferenceApp {
     { title: 'Logout', component: TabsPage, icon: 'log-out', logsOut: true }
   ];
   loggedOutPages: PageObj[] = [
-    { title: 'Login', component: LoginPage, icon: 'log-in' },
-    { title: 'Signup', component: SignupPage, icon: 'person-add' }
+    { title: 'Login', component: LoginPage, icon: 'log-in' }
   ];
-  rootPage: any = TutorialPage;
+  rootPage: any = Lector;
 
   constructor(
     public events: Events,

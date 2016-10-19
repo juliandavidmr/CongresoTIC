@@ -14,8 +14,6 @@
 </ion-header>
 
 <ion-content padding>
-	<p ng-if="autenticado == true">Leer un codigo Qr o de Barras.</p>
-	<p ng-if="autenticado !== true">Debe iniciar sesion para leer codigos de barra</p>
 	<button ion-button full (click)="readBarcode()" ng-if="autenticado == true">Entradas y Salidas</button>
 	<button ion-button full (click)="readBarcode_refrigerio()" ng-if="autenticado == true">Refrigerios</button>
 </ion-content>

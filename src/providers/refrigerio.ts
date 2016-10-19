@@ -11,9 +11,10 @@ export class Refrigerio {
     console.log('Hello Refrigerio Provider');
   }
 
-  load(cedula: string) {
+  load(cedula: string, id_usuario: string) {
     var body = {
-      fk_idusuario: cedula
+      fk_idusuario: cedula,
+      userid: id_usuario
     }
 
     return new Promise((resolve, reject) => {
