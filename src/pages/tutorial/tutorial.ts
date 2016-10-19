@@ -24,7 +24,7 @@ export class TutorialPage {
       {
         title: 'Bienvenido al primer congreso internacional <b>TIC</b>',
         description: 'La Universidad de la Amazonia presenta el primer congreso internacional en TIC en Florencia, Caquetá, Colombia, con el objetivo de intercambiar experiencias académicas e investigativas relacionadas con las Tecnologías de la Información y las Comunicaciones',
-        image: 'assets/img/ica-slidebox-img-1.png',
+        image: 'assets/img/02.png',
       },
       {
         title: 'Acerca de los participantes',

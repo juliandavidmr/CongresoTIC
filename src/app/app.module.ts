@@ -16,6 +16,7 @@ import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
+import { Miqr } from '../pages/miqr/miqr';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -35,7 +36,8 @@ import { Auth } from '../providers/auth';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage
+    TutorialPage,
+    Miqr
   ],
   imports: [
     IonicModule.forRoot(ConferenceApp, {
@@ -61,14 +63,15 @@ import { Auth } from '../providers/auth';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage
+    TutorialPage,
+    Miqr
   ],
   providers: [
-    ConferenceData, 
+    ConferenceData,
     UserData,
     Storage,
-    Asistencia,    
+    Asistencia,
     Auth
   ]
 })
-export class AppModule {}
+export class AppModule { }

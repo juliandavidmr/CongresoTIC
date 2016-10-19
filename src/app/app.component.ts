@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
+import { Miqr } from '../pages/miqr/miqr';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -35,6 +36,7 @@ export class ConferenceApp {
     { title: 'Horario', component: TabsPage, icon: 'calendar' },
     { title: 'Ponentes', component: TabsPage, index: 1, icon: 'contacts' },
     { title: 'Mapa', component: TabsPage, index: 2, icon: 'map' },
+    { title: 'Mi Qr', component: Miqr, index: 2, icon: 'barcode' },
     { title: 'Acerca de', component: TabsPage, index: 3, icon: 'information-circle' },
   ];
   loggedInPages: PageObj[] = [
