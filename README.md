@@ -1,5 +1,7 @@
 # Ionic 2 Conference Application
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliandavidmr/CongresoTIC.svg)](https://greenkeeper.io/)
+
 This is purely a demo of Ionic 2 with TypeScript. It is still in development.
 
 
